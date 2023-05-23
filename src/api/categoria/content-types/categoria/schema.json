@@ -4,27 +4,22 @@
   "info": {
     "singularName": "categoria",
     "pluralName": "categorias",
-    "displayName": "Categoria"
+    "displayName": "Categorias",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Section": {
-      "type": "string",
-      "required": true
-    },
-    "slug": {
-      "type": "uid",
-      "required": false,
-      "targetField": "Section"
-    },
-    "articles": {
+    "artigo": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "categoria"
+      "relation": "manyToOne",
+      "target": "api::artigo.artigo",
+      "inversedBy": "categorias"
+    },
+    "categoria": {
+      "type": "string"
     }
   }
 }
