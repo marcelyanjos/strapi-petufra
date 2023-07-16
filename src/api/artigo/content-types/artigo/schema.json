@@ -28,7 +28,7 @@
     "ilustracao": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -40,12 +40,6 @@
         "publicado"
       ],
       "default": "não publicado"
-    },
-    "usuario": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::usuario.usuario",
-      "inversedBy": "artigos"
     },
     "body": {
       "type": "customField",
