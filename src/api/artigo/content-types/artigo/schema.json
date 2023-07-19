@@ -54,6 +54,15 @@
       "relation": "oneToMany",
       "target": "api::categoria.categoria",
       "mappedBy": "artigo"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "autor": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "artigos"
     }
   }
 }

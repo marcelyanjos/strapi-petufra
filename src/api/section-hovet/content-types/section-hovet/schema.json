@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titulo": {
       "type": "string",
       "required": true
     },
-    "description": {
+    "descricao": {
       "type": "text",
       "required": true
     },
@@ -35,6 +35,9 @@
         "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "subtitulo": {
+      "type": "string"
     }
   }
 }

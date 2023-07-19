@@ -4,27 +4,29 @@
   "info": {
     "singularName": "section-canil",
     "pluralName": "sections-canil",
-    "displayName": "Sections canil"
+    "displayName": "Sections canil",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titulo": {
       "type": "string",
       "required": true
     },
-    "description": {
+    "descricao": {
       "type": "text",
       "required": false
     },
     "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "body": {
       "type": "customField",
@@ -33,6 +35,9 @@
         "preset": "rich"
       },
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "subtitulo": {
+      "type": "string"
     }
   }
 }

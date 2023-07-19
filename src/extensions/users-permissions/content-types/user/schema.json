@@ -89,6 +89,12 @@
     "surname": {
       "type": "string",
       "required": true
+    },
+    "artigos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artigo.artigo",
+      "mappedBy": "autor"
     }
   }
 }
