@@ -16,12 +16,6 @@
       "type": "string",
       "required": true
     },
-    "data_pub": {
-      "type": "datetime"
-    },
-    "data_edit": {
-      "type": "datetime"
-    },
     "descricao": {
       "type": "text"
     },
@@ -32,14 +26,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "não publicado",
-        "publicado"
-      ],
-      "default": "não publicado"
     },
     "body": {
       "type": "customField",
