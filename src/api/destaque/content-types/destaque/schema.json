@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destaques",
+  "info": {
+    "singularName": "destaque",
+    "pluralName": "destaques",
+    "displayName": "Destaque"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Imagem": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Conteudo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}
