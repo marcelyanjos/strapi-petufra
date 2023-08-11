@@ -4,33 +4,43 @@
   "info": {
     "singularName": "destaque",
     "pluralName": "destaques",
-    "displayName": "Destaque"
+    "displayName": "Destaque",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Imagem": {
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "videos"
-      ],
+      ]
+    },
+    "conteudo": {
       "type": "media",
       "multiple": false,
-      "required": true
-    },
-    "Conteudo": {
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+        "videos"
+      ]
     },
-    "Link": {
+    "link": {
+      "type": "string"
+    },
+    "ordem": {
+      "type": "integer",
+      "unique": true,
+      "default": 1,
+      "max": 20
+    },
+    "titulo": {
       "type": "string"
     }
   }
